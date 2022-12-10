@@ -5,13 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.prosoft</groupId>
-    <artifactId>bank-payment-processing-services</artifactId>
+    <artifactId>java-top-basic</artifactId>
     <version>1.0</version>
 
     <packaging>pom</packaging>
 
     <modules>
         <module>java-01-hello-world</module>
+        <module>java-02-wrapper-classes</module>
     </modules>
 
 </project>
