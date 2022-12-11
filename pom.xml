@@ -13,6 +13,7 @@
     <modules>
         <module>java-01-hello-world</module>
         <module>java-02-wrapper-classes</module>
+        <module>java-03-variables</module>
     </modules>
 
 </project>
