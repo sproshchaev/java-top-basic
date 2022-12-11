@@ -15,6 +15,7 @@
         <module>java-02-wrapper-classes</module>
         <module>java-03-variables</module>
         <module>java-04-input-output</module>
+        <module>java-05-conditions</module>
     </modules>
 
 </project>

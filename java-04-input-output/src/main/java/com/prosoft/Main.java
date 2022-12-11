@@ -6,8 +6,7 @@ import java.util.Scanner;
  * java-04-input-output
  *
  */
-public class Main
-{
+public class Main {
     public static void main(String[] args) {
 
         /**
