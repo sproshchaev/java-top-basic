@@ -18,6 +18,7 @@
         <module>java-05-conditions</module>
         <module>java-06-methods</module>
         <module>java-07-arrays</module>
+        <module>java-08-string</module>
     </modules>
 
 </project>
