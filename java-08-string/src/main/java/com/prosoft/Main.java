@@ -1,6 +1,7 @@
 package com.prosoft;
 
 import java.util.SortedMap;
+import java.util.StringTokenizer;
 
 /**
  * java-08-string
@@ -143,7 +144,54 @@ public class Main {
             System.out.println(" -" + item);
         }
 
+        /**
+         * Слайд 108. Строки String. Методы класса StringBuffer: append
+         */
+        StringBuffer sb = new StringBuffer("Hello");
+        sb.append(" World!");
+        System.out.println("18) sb=" + "\"" + sb + "\"");
 
+        /**
+         * Слайд 109. Строки String. Методы класса StringBuffer: insert
+         */
+        StringBuffer sb2 = new StringBuffer("I Java!");
+        sb2.insert(2, "love ");
+        System.out.println("19) sb2=" + "\"" + sb2.toString() + "\"");
+
+        /**
+         * Слайд 110. Строки String. Методы класса StringBuffer: insert
+         */
+        StringBuffer sb3 = new StringBuffer("Hello World!");
+        sb3.reverse();
+        System.out.println("20) sb3=" + "\"" + sb3.toString() + "\"");
+
+        /**
+         * Слайд 111. Строки String. Методы класса StringBuffer: delete
+         */
+        StringBuffer sb4 = new StringBuffer("Hello World!");
+        System.out.println("21) sb4=" + sb4 + " -> " + sb4.delete(5, 11));
+
+        /**
+         * Слайд 112. Строки String. Методы класса StringBuffer: deleteCharAt
+         */
+        StringBuffer sb5 = new StringBuffer("Hello World!");
+        System.out.println("22) sb5=" + sb5 + " -> " + sb5.deleteCharAt(11));
+
+        /**
+         * Слайд 113. Строки String. Методы класса StringBuffer: replace
+         */
+        StringBuffer sb6 = new StringBuffer("Hello World!");
+        System.out.println("23) sb6=" + sb6 + " -> " + sb6.replace(6,11, "Friends"));
+
+        /**
+         * Слайд 117. Строки String.Класс StringTokenizer
+         */
+        String s = "Best,Java,programming,language.";
+        System.out.println("24) s=" + s);
+        StringTokenizer st = new StringTokenizer(s, ",");
+        while (st.hasMoreTokens()) {
+            System.out.println(" -" + st.nextToken());
+        }
     }
 
 }
