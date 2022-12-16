@@ -184,7 +184,7 @@ public class Main {
         System.out.println("23) sb6=" + sb6 + " -> " + sb6.replace(6,11, "Friends"));
 
         /**
-         * Слайд 117. Строки String.Класс StringTokenizer
+         * Слайд 117. Строки String. Класс StringTokenizer
          */
         String s = "Best,Java,programming,language.";
         System.out.println("24) s=" + s);
@@ -192,6 +192,41 @@ public class Main {
         while (st.hasMoreTokens()) {
             System.out.println(" -" + st.nextToken());
         }
+
+        /**
+         * Слайд 119. Строки String. Сравнение строк
+         */
+        String text1 = "java";
+        String text2 = "java"; // в переменную присваивается ссылка на объект из пула строк
+        System.out.println("25) " + (text1 == text2));
+        System.out.println(" " + text1.equals(text2));
+
+        /**
+         * Слайд 120. Строки String. Сравнение строк, созданных через new
+         */
+        String text3 = new String("java");
+        String text4 = new String("java");
+        System.out.println("26) " + (text3== text4));
+        System.out.println(" " + text3.equals(text4));
+
+        /**
+         * Слайд 121. Строки String. Сравнение строк, метод intern()
+         */
+        String text5 = new String("java");
+        String text6 = new String("java");
+        System.out.println("27) " + (text5== text6));
+        text5 = text5.intern();
+        text6 = text6.intern();
+        System.out.println(" after .intern(): " + (text5 == text6));
+
+        /**
+         * Слайд 122. Строки String. Сравнение строк в StringBuilder и StringBuffer
+         */
+        StringBuffer sb7 = new StringBuffer("abc");
+        StringBuffer sb8 = new StringBuffer("abc");
+        System.out.println("28) sb7=" + sb7 + " sb8=" + sb8);
+        System.out.println(" .equals: " + sb7.equals(sb8));
+        System.out.println(" .to: " + sb7.toString().equals(sb8.toString()));
     }
 
 }
