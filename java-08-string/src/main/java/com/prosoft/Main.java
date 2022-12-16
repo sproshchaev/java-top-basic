@@ -227,6 +227,20 @@ public class Main {
         System.out.println("28) sb7=" + sb7 + " sb8=" + sb8);
         System.out.println(" .equals: " + sb7.equals(sb8));
         System.out.println(" .to: " + sb7.toString().equals(sb8.toString()));
+
+        /**
+         * Слайд 124. Строки String. Регулярные выражения: метод matches
+         */
+        String email = "user@mail.ru"; // шаблон проверки адреса электронной почты
+        String regular = "[a-zA-Z]{1}[a-zA-Z\\d\\u002E\\u005F]+@([a-zA-Z]+\\u002E){1,2}((ru)|(net)|(com)|(org))";
+        System.out.println("29)" + email.matches(regular));
+
+        /**
+         * Слайд 125. Строки String. Регулярные выражения: метод replaceAll
+         */
+        String text= "I love coffee!";
+        System.out.println("30) " + text + " -> " + text.replaceAll("[Cc]offee", "java"));
+
     }
 
 }
