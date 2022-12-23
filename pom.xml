@@ -20,6 +20,7 @@
         <module>java-07-arrays</module>
         <module>java-08-string</module>
         <module>java-09-circle</module>
+        <module>java-10-shape</module>
     </modules>
 
 </project>
