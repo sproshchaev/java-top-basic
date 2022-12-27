@@ -1,7 +1,7 @@
 package com.prosoft;
 
 /**
- * java-10-shape Наследование на основе класса
+ * java-11-shape Использование абстрактного класса
  *
  */
 public class Main {
@@ -12,6 +12,5 @@ public class Main {
 
         Shape shape2 = new Rectangle(20, 20, "white");
         System.out.println("Rectangle. Площадь: " + shape2.getArea());
-
     }
 }

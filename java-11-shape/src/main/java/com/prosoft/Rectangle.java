@@ -1,7 +1,7 @@
 package com.prosoft;
 
 /**
- * Класс Прямоугольник
+ * Класс Прямоугольник создан на основе абстрактного класса Shape
  */
 public class Rectangle extends Shape {
     /**
@@ -16,9 +16,9 @@ public class Rectangle extends Shape {
     /**
      * Конструктор класса
      *
+     * @param color
      * @param length
      * @param width
-     * @param color
      */
     public Rectangle(int length, int width, String color) {
         super(color);
@@ -27,26 +27,12 @@ public class Rectangle extends Shape {
     }
 
     /**
-     * Переопределение метода getArea() класса Shape
+     * Переопределение метода getArea() из абстрактного класса Shape
      *
      * @return
      */
     @Override
     public double getArea() {
         return length * width;
-    }
-
-    /**
-     * Переопределение метода toString() класса Object
-     *
-     * @return
-     */
-    @Override
-    public String toString() {
-        return "Rectangle{" +
-                "length=" + length +
-                ", width=" + width +
-                ", color=" + super.getColor() +
-                '}';
     }
 }

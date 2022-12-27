@@ -21,6 +21,7 @@
         <module>java-08-string</module>
         <module>java-09-circle</module>
         <module>java-10-shape</module>
+        <module>java-11-shape</module>
     </modules>
 
 </project>

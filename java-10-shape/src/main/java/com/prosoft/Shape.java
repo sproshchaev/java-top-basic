@@ -1,5 +1,8 @@
 package com.prosoft;
 
+/**
+ * Класс Shape (Геометрическая фигура)
+ */
 public class Shape {
     private String color;
 

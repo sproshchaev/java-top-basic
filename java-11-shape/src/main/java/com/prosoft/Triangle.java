@@ -1,7 +1,7 @@
 package com.prosoft;
 
 /**
- * Класс Треугольник
+ * Класс Треугольник создан на основе абстрактного класса Shape
  */
 public class Triangle extends Shape {
     /**
@@ -16,9 +16,9 @@ public class Triangle extends Shape {
     /**
      * Конструктор класса
      *
+     * @param color
      * @param base
      * @param height
-     * @param color
      */
     public Triangle(int base, int height, String color) {
         super(color);
@@ -27,26 +27,12 @@ public class Triangle extends Shape {
     }
 
     /**
-     * Переопределение метода getArea() абстрактного класса Shape
+     * Переопределение метода getArea() из абстрактного класса Shape
      *
      * @return
      */
     @Override
     public double getArea() {
         return 0.5 * base * height;
-    }
-
-    /**
-     * Переопределение метода toString класса Object
-     *
-     * @return
-     */
-    @Override
-    public String toString() {
-        return "Triangle{" +
-                "base=" + base +
-                ", height=" + height +
-                ", subclass=" + super.toString() +
-                '}';
     }
 }
