@@ -24,6 +24,7 @@
         <module>java-11-shape</module>
         <module>java-12-shape</module>
         <module>java-13-binding</module>
+        <module>java-14-generics</module>
     </modules>
 
 </project>
