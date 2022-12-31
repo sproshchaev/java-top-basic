@@ -23,6 +23,7 @@
         <module>java-10-shape</module>
         <module>java-11-shape</module>
         <module>java-12-shape</module>
+        <module>java-13-binding</module>
     </modules>
 
 </project>
