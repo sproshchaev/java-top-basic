@@ -25,6 +25,7 @@
         <module>java-12-shape</module>
         <module>java-13-binding</module>
         <module>java-14-generics</module>
+        <module>java-15-wildcard</module>
     </modules>
 
 </project>
