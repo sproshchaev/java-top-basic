@@ -27,6 +27,7 @@
         <module>java-14-generics</module>
         <module>java-15-wildcard</module>
         <module>java-16-iterator</module>
+        <module>java-17-listIterator</module>
     </modules>
 
 </project>
