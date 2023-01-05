@@ -26,6 +26,7 @@
         <module>java-13-binding</module>
         <module>java-14-generics</module>
         <module>java-15-wildcard</module>
+        <module>java-16-iterator</module>
     </modules>
 
 </project>
