@@ -47,6 +47,15 @@ public class Main {
         /* showPet(catList); <- в метод showPet не может быть передан catList и dogList, так как аргумент в нем
            showPet(dogList);    (по коллекции) ограничен снизу <? super Pet> */
 
+        /**
+         * (8) Высощ
+         */
+        /* showCat(new Object()); <- метод showCat не может быть вызван с аргументами из экземпляров
+           showCat(new Animal());    классов Object, Animal, Pet, Doc из-за ограничения по типу <T extends Cat>
+           showCat(new Pet());
+           showCat(new Dog()); */
+        showCat(new Cat());
+
     }
 
     /**
@@ -69,6 +78,15 @@ public class Main {
         for (Object object : petList) {
             System.out.println("Object: " + object.toString());
         }
+    }
+
+    /**
+     * Статический метод showCat принимает в качестве аргумента только экземпляры класса Cat м его наследников
+     * @param cat
+     * @param <T>
+     */
+    public static <T extends Cat> void showCat(T cat) {
+        System.out.println("Cat: " + cat.toString());
     }
 
 }
