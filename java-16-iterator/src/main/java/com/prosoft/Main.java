@@ -42,6 +42,7 @@ public class Main {
          * с предидущим итератором iterator проход по элементам коллекции уже не возможен
          * Через iterator2.next() перемещаем курсор на сдледующий элемент
          * Через iterator2.remove() удаляем элемент, на который указывает курсор
+         * Выбрасывает IllegalStateException, если делается попытка вызвать remove(), которому не предшествует вызов next()
          */
         Iterator<Integer> iterator2 = integerList.iterator();
         while (iterator2.hasNext()) {
