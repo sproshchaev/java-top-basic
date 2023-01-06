@@ -29,6 +29,7 @@
         <module>java-16-iterator</module>
         <module>java-17-listIterator</module>
         <module>java-18-arraylist</module>
+        <module>java-19-linkedlist</module>
     </modules>
 
 </project>
