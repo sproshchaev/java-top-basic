@@ -28,6 +28,7 @@
         <module>java-15-wildcard</module>
         <module>java-16-iterator</module>
         <module>java-17-listIterator</module>
+        <module>java-18-arraylist</module>
     </modules>
 
 </project>
