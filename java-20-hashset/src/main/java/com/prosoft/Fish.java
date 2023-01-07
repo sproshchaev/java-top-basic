@@ -39,6 +39,10 @@ public class Fish {
         return Objects.hash(name, weight, price);
     }
 
+    /**
+     * (1.3) Переопределение метода toString()
+     * @return
+     */
     @Override
     public String toString() {
         return "Fish{" +
