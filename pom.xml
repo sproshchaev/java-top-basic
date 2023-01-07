@@ -30,6 +30,7 @@
         <module>java-17-listIterator</module>
         <module>java-18-arraylist</module>
         <module>java-19-linkedlist</module>
+        <module>java-20-hashset</module>
     </modules>
 
 </project>
