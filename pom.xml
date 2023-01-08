@@ -32,6 +32,7 @@
         <module>java-19-linkedlist</module>
         <module>java-20-hashset</module>
         <module>java-21-linkedhashset</module>
+        <module>java-22-treeset</module>
     </modules>
 
 </project>
