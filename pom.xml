@@ -33,6 +33,7 @@
         <module>java-20-hashset</module>
         <module>java-21-linkedhashset</module>
         <module>java-22-treeset</module>
+        <module>java-23-priorityqueue</module>
     </modules>
 
 </project>
