@@ -66,6 +66,7 @@ public class Main {
 
         /**
          * (7) Вывод элементов очереди через Iterator: 1, 3, 5, 9, 4
+         * Итератор не гарантирует проход по элементам в соответствии с компаратором
          */
         System.out.print("IntegerPriorityQueue2. Using an iterator: ");
         Iterator<Integer> iterator2 = integerPriorityQueue2.iterator();
@@ -76,6 +77,7 @@ public class Main {
 
         /**
          * (8) Извлечение элементов из очереди. Метод remove(): 1, 3, 4, 5, 9
+         * Метод remove() извлекает элементы в соответствии с компаратором
          */
         System.out.print("Removing elements from the queue: ");
         while (!integerPriorityQueue2.isEmpty()) {
