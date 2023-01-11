@@ -34,6 +34,7 @@
         <module>java-21-linkedhashset</module>
         <module>java-22-treeset</module>
         <module>java-23-priorityqueue</module>
+        <module>java-24-hashmap</module>
     </modules>
 
 </project>
