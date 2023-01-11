@@ -65,7 +65,7 @@ public class Main {
         System.out.println("PriorityQueue2 size=" + integerPriorityQueue2.size() + ": " + integerPriorityQueue2);
 
         /**
-         * (7) Вывод элементов очереди через Iterator: 9, 5, 4, 3, 1
+         * (7) Вывод элементов очереди через Iterator: 1, 3, 5, 9, 4
          */
         System.out.print("IntegerPriorityQueue2. Using an iterator: ");
         Iterator<Integer> iterator2 = integerPriorityQueue2.iterator();
@@ -75,14 +75,13 @@ public class Main {
         System.out.println("");
 
         /**
-         * (8) Извлечение элементов из очереди: 9, 5, 4, 3, 1
+         * (8) Извлечение элементов из очереди. Метод remove(): 1, 3, 4, 5, 9
          */
         System.out.print("Removing elements from the queue: ");
         while (!integerPriorityQueue2.isEmpty()) {
             System.out.print(integerPriorityQueue2.remove() + ", ");
         }
         System.out.println("");
-
 
     }
 }
