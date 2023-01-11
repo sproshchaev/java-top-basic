@@ -34,7 +34,7 @@ public class Main {
          */
         System.out.print("Using an iterator: ");
         Iterator<Integer> iterator = integerPriorityQueue.iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             System.out.print(iterator.next() + ", ");
         }
         System.out.println("");
@@ -70,20 +70,29 @@ public class Main {
          */
         System.out.print("IntegerPriorityQueue2. Using an iterator: ");
         Iterator<Integer> iterator2 = integerPriorityQueue2.iterator();
-        while(iterator2.hasNext()) {
+        while (iterator2.hasNext()) {
             System.out.print(iterator2.next() + ", ");
         }
         System.out.println("");
 
         /**
-         * (8) Извлечение элементов из очереди. Метод remove(): 1, 3, 4, 5, 9
-         * Метод remove() извлекает элементы в соответствии с компаратором
+         * (8) Получение первого элемента. Методы element(), peek(): 1
+         * Методы element(), peek() получают первый элемент в соответствии с логикой компаратора
+         *
+         */
+        System.out.println("Receiving first elements from the queue (peek): " + integerPriorityQueue2.peek());
+        System.out.println("Receiving first elements from the queue (element): " + integerPriorityQueue2.element());
+
+        /**
+         * (9) Извлечение элементов из очереди. Метод remove()/poll(): 1, 3, 4, 5, 9
+         * Методы remove()/poll() извлекает элементы в соответствии с логикой компаратора
          */
         System.out.print("Removing elements from the queue: ");
         while (!integerPriorityQueue2.isEmpty()) {
             System.out.print(integerPriorityQueue2.remove() + ", ");
         }
         System.out.println("");
+
 
     }
 }
