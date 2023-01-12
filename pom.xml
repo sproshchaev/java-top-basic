@@ -36,6 +36,7 @@
         <module>java-23-priorityqueue</module>
         <module>java-24-hashmap</module>
         <module>java-25-linkedhashmap</module>
+        <module>java-26-treemap</module>
     </modules>
 
 </project>
