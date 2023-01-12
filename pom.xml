@@ -38,6 +38,7 @@
         <module>java-25-linkedhashmap</module>
         <module>java-26-treemap</module>
         <module>java-27-weakhashmap</module>
+        <module>java-28-synchronizedlist</module>
     </modules>
 
 </project>
