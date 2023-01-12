@@ -37,6 +37,7 @@
         <module>java-24-hashmap</module>
         <module>java-25-linkedhashmap</module>
         <module>java-26-treemap</module>
+        <module>java-27-weakhashmap</module>
     </modules>
 
 </project>
