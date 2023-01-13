@@ -39,6 +39,7 @@
         <module>java-26-treemap</module>
         <module>java-27-weakhashmap</module>
         <module>java-28-synchronizedlist</module>
+        <module>java-29-concurent-collection</module>
     </modules>
 
 </project>
