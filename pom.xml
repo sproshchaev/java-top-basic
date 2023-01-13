@@ -41,6 +41,7 @@
         <module>java-28-synchronizedlist</module>
         <module>java-29-concurent-collection</module>
         <module>java-30-for-each</module>
+        <module>java-31-stream-api</module>
     </modules>
 
 </project>
