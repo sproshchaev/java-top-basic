@@ -184,12 +184,24 @@ public class Main {
          * Терминальные операции: collect() - соберет результаты обработки в коллекции
          */
         Collection<String> stringCollection12 = Arrays.asList("01", "02", "3", "4");
-        System.out.print("Use collect(): " + stringCollection12 + " -> ");
+        System.out.print("Use collect() и Collectors.toList(): " + stringCollection12 + " -> ");
         System.out.println(
                 stringCollection12.stream()
                         .filter((s) -> s.contains("0"))
                         .collect(Collectors.toList())
         );
+
+        /**
+         * Терминальные операции: collect() - соберет результаты обработки в коллекции
+         * Использование статического метода Collectors.joining()
+         */
+        System.out.print("Use collect() и Collectors.joining(): " + stringCollection12 + " -> ");
+        System.out.println(
+                stringCollection12.stream()
+                        .filter((s) -> s.contains("0"))
+                        .collect(Collectors.joining(", "))
+        );
+
 
         /**
          * Терминальные операции: count - посчитает и выведет, сколько элементов, соответствующих условию
