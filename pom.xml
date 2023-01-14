@@ -42,6 +42,12 @@
         <module>java-29-concurent-collection</module>
         <module>java-30-for-each</module>
         <module>java-31-stream-api</module>
+        <module>java-30-annotation</module>
+        <module>java-31-anonymous-class</module>
+        <module>java-32-lambda</module>
+        <module>java-33-functional-interfaces</module>
+        <module>java-34-for-each</module>
+        <module>java-35-stream-api</module>
     </modules>
 
 </project>
