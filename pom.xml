@@ -40,8 +40,6 @@
         <module>java-27-weakhashmap</module>
         <module>java-28-synchronizedlist</module>
         <module>java-29-concurent-collection</module>
-        <module>java-30-for-each</module>
-        <module>java-31-stream-api</module>
         <module>java-30-annotation</module>
         <module>java-31-anonymous-class</module>
         <module>java-32-lambda</module>
