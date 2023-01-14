@@ -297,6 +297,15 @@ public class Main {
         );
 
         /**
+         * Терминальные операции: sum() - суммирует элементы стрима
+         */
+        Collection<Integer> stringCollection22 = Arrays.asList(1, 2, 3, 4, 5);
+        System.out.print("Use sum()): " + stringCollection22 + " -> ");
+        System.out.println(stringCollection22.stream()
+                .mapToInt(Integer::intValue)
+                .sum());
+
+        /**
          * (1) Создание массива класса ArrayList()
          */
         List<Car> carList = new ArrayList<>();
@@ -356,6 +365,18 @@ public class Main {
             System.out.print(car.getBrand() + " =" + car.getPrice() + ", ");
         });
         System.out.println("");
+
+        /**
+         * (8) Вычислить суммарную стоимости всех машин в коллекции, используя оператор :: (method Reference ссылка на метод)
+         * Промежуточный метод mapToDouble(), терминальный метод sum().
+         */
+        System.out.print("Price of all cars: ");
+        System.out.println(
+                carList.stream()
+                        .mapToDouble(Car::getPrice)
+                        .sum()
+        );
+
 
     }
 }
