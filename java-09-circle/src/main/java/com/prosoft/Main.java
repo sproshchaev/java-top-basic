@@ -4,8 +4,7 @@ package com.prosoft;
  * java-09-circle
  *
  */
-public class Main
-{
+public class Main {
     public static void main(String[] args) {
 
         Circle c1 = new Circle(2.0, "blue");

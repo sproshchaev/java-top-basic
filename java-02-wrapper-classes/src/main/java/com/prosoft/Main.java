@@ -6,7 +6,7 @@ package com.prosoft;
  */
 public class Main {
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
 
         /**
          * Слайд 19 Методы вида parseXXX преобразуют строку в значение примитивного типа
