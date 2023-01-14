@@ -297,7 +297,8 @@ public class Main {
         );
 
         /**
-         * Терминальные операции: sum() - суммирует элементы стрима
+         * Терминальные операции: sum() - суммирует элементы стрима.
+         * Оператор :: Method Reference (ссылка на метод).
          */
         Collection<Integer> stringCollection22 = Arrays.asList(1, 2, 3, 4, 5);
         System.out.print("Use sum()): " + stringCollection22 + " -> ");
