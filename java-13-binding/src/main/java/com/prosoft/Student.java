@@ -1,7 +1,7 @@
 package com.prosoft;
 
 /**
- * Класс Student разширяет класс Person (который расширял Object)
+ * Класс Student расширяет класс Person (который расширял Object)
  */
 public class Student extends Person {
 

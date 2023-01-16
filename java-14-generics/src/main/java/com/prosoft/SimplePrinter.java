@@ -2,7 +2,9 @@ package com.prosoft;
 
 public class SimplePrinter {
 
-    // (1)
+    /**
+     * (1) Четыре метода, у которых отличие состоит только в типе аргумента: int, double, String, Object
+     */
     public void print(int digit) {
         System.out.println("Вывод: " + digit);
     }
@@ -19,7 +21,11 @@ public class SimplePrinter {
         System.out.println("Вывод: " + obj.toString());
     }
 
-    // (3) использование Generic
+    /**
+     * (3) Всего один (!) метод print2(), принимающий Generic в аргументе
+     * @param digit
+     * @param <T>
+     */
     public <T> void print2(T digit) {
         System.out.println("Вывод: " + digit);
     }
