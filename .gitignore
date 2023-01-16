@@ -39,3 +39,9 @@ build/
 ### Arch ###
 *.zip
 
+### Txt ###
+*.txt
+
+### Tmp ###
+tmp/
+

@@ -46,6 +46,7 @@
         <module>java-33-functional-interfaces</module>
         <module>java-34-for-each</module>
         <module>java-35-stream-api</module>
+        <module>java-36-file</module>
     </modules>
 
 </project>
