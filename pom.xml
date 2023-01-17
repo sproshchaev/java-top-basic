@@ -50,6 +50,7 @@
         <module>java-37-inputstream-outputstream</module>
         <module>java-38-fileinputstream-fileoutputstream</module>
         <module>java-39-bytearrayinputstream-bytearrayoutputstream</module>
+        <module>java-40-objectinputstream-objectoutputstream</module>
     </modules>
 
 </project>
