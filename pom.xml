@@ -48,6 +48,7 @@
         <module>java-35-stream-api</module>
         <module>java-36-file</module>
         <module>java-37-inputstream-outputstream</module>
+        <module>java-38-fileinputstream-fileoutputstream</module>
     </modules>
 
 </project>
