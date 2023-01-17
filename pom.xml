@@ -49,6 +49,7 @@
         <module>java-36-file</module>
         <module>java-37-inputstream-outputstream</module>
         <module>java-38-fileinputstream-fileoutputstream</module>
+        <module>java-39-bytearrayinputstream-bytearrayoutputstream</module>
     </modules>
 
 </project>
