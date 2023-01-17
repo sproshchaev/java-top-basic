@@ -47,6 +47,7 @@
         <module>java-34-for-each</module>
         <module>java-35-stream-api</module>
         <module>java-36-file</module>
+        <module>java-37-inputstream-outputstream</module>
     </modules>
 
 </project>
