@@ -51,7 +51,7 @@ public class Main {
                     System.out.println("Something Wrong!");
                 }
             } catch (IOException ex) {
-                Logger.getLogger(File.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
             }
         } else {
             System.out.println("File already exists!");
