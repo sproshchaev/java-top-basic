@@ -52,6 +52,7 @@
         <module>java-39-bytearrayinputstream-bytearrayoutputstream</module>
         <module>java-40-objectinputstream-objectoutputstream</module>
         <module>java-41-bufferedinputstream-bufferedoutputstream</module>
+        <module>java-42-filereader-filewriter</module>
     </modules>
 
 </project>
