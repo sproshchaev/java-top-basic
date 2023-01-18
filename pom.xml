@@ -54,6 +54,7 @@
         <module>java-41-bufferedinputstream-bufferedoutputstream</module>
         <module>java-42-filereader-filewriter</module>
         <module>java-43-inputstreamreader-outputstreamwriter</module>
+        <module>java-44-systemin-systemout-systemerror</module>
     </modules>
 
 </project>
