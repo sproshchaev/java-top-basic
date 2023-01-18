@@ -53,6 +53,7 @@
         <module>java-40-objectinputstream-objectoutputstream</module>
         <module>java-41-bufferedinputstream-bufferedoutputstream</module>
         <module>java-42-filereader-filewriter</module>
+        <module>java-43-inputstreamreader-outputstreamwriter</module>
     </modules>
 
 </project>
