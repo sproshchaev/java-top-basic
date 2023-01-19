@@ -57,6 +57,7 @@
         <module>java-44-systemin-systemout-systemerror</module>
         <module>java-45-serializable</module>
         <module>java-46-externalizable</module>
+        <module>java-47-thread</module>
     </modules>
 
 </project>
