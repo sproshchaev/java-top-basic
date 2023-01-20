@@ -60,6 +60,7 @@
         <module>java-47-thread</module>
         <module>java-48-runnable</module>
         <module>java-49-interrupt</module>
+        <module>java-50-synchronized</module>
     </modules>
 
 </project>
