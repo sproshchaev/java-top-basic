@@ -14,11 +14,12 @@ public class Main {
         MyThread1 myThread1 = new MyThread1(10);
         Thread thread = new Thread(myThread1);
 
+        /**
+         * Запуск дополнительного потока. Метод start()
+         */
+        thread.start();
+
         try {
-            /**
-             * Запуск дополнительного потока. Метод start()
-             */
-            thread.start();
 
             /**
              * Блокировка основного потока main() до завершения дополнительного потока myThread1(). Метод join()
