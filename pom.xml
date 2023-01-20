@@ -61,6 +61,7 @@
         <module>java-48-runnable</module>
         <module>java-49-interrupt</module>
         <module>java-50-synchronized</module>
+        <module>java-51-wait-notify</module>
     </modules>
 
 </project>
