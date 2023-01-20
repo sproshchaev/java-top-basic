@@ -59,6 +59,7 @@
         <module>java-46-externalizable</module>
         <module>java-47-thread</module>
         <module>java-48-runnable</module>
+        <module>java-49-interrupt</module>
     </modules>
 
 </project>
