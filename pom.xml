@@ -64,6 +64,7 @@
         <module>java-51-wait-notify</module>
         <module>java-52-semaphore</module>
         <module>java-53-executorservice</module>
+        <module>java-54-callable</module>
     </modules>
 
 </project>
