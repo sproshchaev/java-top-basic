@@ -65,6 +65,7 @@
         <module>java-52-semaphore</module>
         <module>java-53-executorservice</module>
         <module>java-54-callable</module>
+        <module>java-55-volatile</module>
     </modules>
 
 </project>
