@@ -62,6 +62,7 @@
         <module>java-49-interrupt</module>
         <module>java-50-synchronized</module>
         <module>java-51-wait-notify</module>
+        <module>java-52-semaphore</module>
     </modules>
 
 </project>
