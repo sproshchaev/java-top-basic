@@ -38,10 +38,10 @@ public class Main {
         /**
          * (4) Использование итератора для перебора элементов коллекции TreeMap
          */
-        Iterator iter = treeMap.entrySet().iterator();
+        Iterator iterator = treeMap.entrySet().iterator();
         count = 0;
-        while (iter.hasNext()) {
-            Map.Entry entry = (Map.Entry) iter.next();
+        while (iterator.hasNext()) {
+            Map.Entry entry = (Map.Entry) iterator.next();
             String key = (String) entry.getKey();
             String value = (String) entry.getValue();
             System.out.println(++count + ") " + key + " -> " + value);
