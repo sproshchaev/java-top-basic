@@ -1,10 +1,10 @@
 package com.prosoft;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void add() {
     }
 
