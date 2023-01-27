@@ -68,6 +68,7 @@
         <module>java-55-volatile</module>
         <module>java-56-inetaddress</module>
         <module>java-57-socket-serversocket</module>
+        <module>java-58-datagramsocket</module>
     </modules>
 
 </project>
