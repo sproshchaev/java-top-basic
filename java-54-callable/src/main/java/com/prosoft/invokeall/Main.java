@@ -18,17 +18,13 @@ public class Main {
 
         int num = 10; //number of threads
         ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(num);
-        //collection to keep created callables
         Set<Callable<String>> callables = new HashSet<Callable<String>>();
         Random r = new Random();
-        //fill the collection in the loop
         for (int i = 0; i < num; i++) {
             MyStringCallable mc = new MyStringCallable(r.nextInt(1000));
             callables.add(mc);
         }
 
-        //another collection to keep the results from all
-        //the threads
         List<Future<String>> results = null;
         try {
             results = executor.invokeAll(callables);

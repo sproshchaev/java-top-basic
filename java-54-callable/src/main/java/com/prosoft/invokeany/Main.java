@@ -26,17 +26,14 @@ public class Main {
          * который в качестве параметра принимает именно коллекцию объектов Callable и запускает какой-то один,
          * случайно выбранный из потоков. Управлять тем, какой именно поток будет активирован, мы не можем
          */
-        //collection to keep created callables
         Set<Callable<String>> callables = new HashSet<Callable<String>>();
         Random r = new Random();
-        //fill the collection in the loop
         for (int i = 0; i < num; i++) {
             MyStringCallable mc = new MyStringCallable(r.nextInt(1000));
             callables.add(mc);
         }
         String result = "";
         try {
-            //launch a random thread out of 10
             result = executor.invokeAny(callables);
         } catch (InterruptedException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
@@ -45,7 +42,6 @@ public class Main {
         } finally {
             executor.shutdown();
         }
-        //show the name of the launched thread
         System.out.println("Received from callable: " + result);
     }
 }

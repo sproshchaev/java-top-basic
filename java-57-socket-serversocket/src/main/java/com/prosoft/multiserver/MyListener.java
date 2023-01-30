@@ -12,8 +12,8 @@ import java.util.logging.Logger;
 
 public class MyListener implements Runnable {
     private Socket socket = null;
-    private ObjectOutputStream out = null;
-    private ObjectInputStream in = null;
+    private ObjectOutputStream output = null;
+    private ObjectInputStream input = null;
     private String message = "";
 
     public MyListener(Socket s) {
@@ -24,12 +24,12 @@ public class MyListener implements Runnable {
     public void run() {
         try {
             System.out.println("Client connected " + this.socket.getInetAddress().getHostName());
-            out = new ObjectOutputStream(socket.getOutputStream());
-            out.flush();
-            in = new ObjectInputStream(socket.getInputStream());
+            output = new ObjectOutputStream(socket.getOutputStream());
+            output.flush();
+            input = new ObjectInputStream(socket.getInputStream());
             do {
                 try {
-                    message = (String) in.readObject();
+                    message = (String) input.readObject();
                     System.out.println("client> " + message);
                     if (message.equals("exit")) {
                         break;
@@ -48,8 +48,8 @@ public class MyListener implements Runnable {
 
     void sendMessage(String m) {
         try {
-            out.writeObject(m);
-            out.flush();
+            output.writeObject(m);
+            output.flush();
         } catch (IOException ex) {
             Logger.getLogger(MyListener.class.getName()).log(Level.SEVERE, null, ex);
         }

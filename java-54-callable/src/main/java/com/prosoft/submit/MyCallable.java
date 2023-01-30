@@ -3,11 +3,11 @@ package com.prosoft.submit;
 import java.util.concurrent.Callable;
 
 public class MyCallable implements Callable<Integer> {
-    private int beg;
+    private int begin;
     private int end;
 
-    public MyCallable(int beg, int end) {
-        this.beg = beg;
+    public MyCallable(int begin, int end) {
+        this.begin = begin;
         this.end = end;
     }
 
@@ -19,7 +19,7 @@ public class MyCallable implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         Integer sum = 0;
-        for (int i = this.beg; i <= this.end; i++) {
+        for (int i = this.begin; i <= this.end; i++) {
             sum += i;
         }
         return sum;

@@ -13,9 +13,9 @@ import java.util.logging.Logger;
  */
 public class ClientChat {
     private Socket client = null;
-    private ObjectInputStream in = null;
-    private ObjectOutputStream out = null;
-    private String msg = "";
+    private ObjectInputStream input = null;
+    private ObjectOutputStream output = null;
+    private String message = "";
     private int port = 8888;
 
     public static void main(String[] args) {
@@ -33,18 +33,18 @@ public class ClientChat {
              */
             client = new Socket("127.0.0.1", port);
             System.out.println("Connected to server");
-            out = new ObjectOutputStream(client.getOutputStream());
-            out.flush();
-            in = new ObjectInputStream(client.getInputStream());
+            output = new ObjectOutputStream(client.getOutputStream());
+            output.flush();
+            input = new ObjectInputStream(client.getInputStream());
             do {
                 /**
                  * Создание диалоговое окна для ввода текстового сообщения и это сообщение отправляется серверу
                  */
-                msg = JOptionPane.showInputDialog(this, "Enter your message:");
-                if (msg == null) {
-                    msg = "";
+                message = JOptionPane.showInputDialog(this, "Enter your message:");
+                if (message == null) {
+                    message = "";
                 }
-                sendMessage(msg);
+                sendMessage(message);
                 /**
                  * После отправки клиент автоматически переходит в режим ожидания ответа от сервера:
                  * клиент вызывает метод in.readObject(). Этот метод тоже блокирующий, поэтому клиент останавливает
@@ -52,24 +52,24 @@ public class ClientChat {
                  * сообщения отправлял клиенту уведомление о получении и тем самым выводил клиентское приложение из
                  * состояния блокировки
                  */
-                if (!msg.equals("exit")) {
+                if (!message.equals("exit")) {
                     try {
-                        msg = (String) in.readObject();
+                        message = (String) input.readObject();
                     } catch (ClassNotFoundException ex) {
                         Logger.getLogger(ClientChat.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                    System.out.println("server> " + msg);
+                    System.out.println("server> " + message);
                 }
-            } while (!msg.equals("exit"));
+            } while (!message.equals("exit"));
         } catch (IOException ex) {
             Logger.getLogger(ClientChat.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
-                if (in != null) {
-                    in.close();
+                if (input != null) {
+                    input.close();
                 }
-                if (out != null) {
-                    out.close();
+                if (output != null) {
+                    output.close();
                 }
                 if (client != null) {
                     client.close();
@@ -82,8 +82,8 @@ public class ClientChat {
 
     void sendMessage(String msg) {
         try {
-            out.writeObject(msg);
-            out.flush();
+            output.writeObject(msg);
+            output.flush();
         } catch (IOException ex) {
             Logger.getLogger(ClientChat.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -21,12 +21,15 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        int num = 10; // число запускаемых потоков 1, 2, ..., 10
+        /**
+         * Число запускаемых потоков 1, 2, ..., 10
+         */
+        int number = 10;
 
         /**
          * Создание объекта executor через фабричный метод newFixedThreadPool(num) класса Executors
          */
-        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(num);
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(number);
 
         /**
          * Создание List<Future<Integer>> results, для сбора в нем возвращаемые результаты от всех потоков
@@ -39,9 +42,9 @@ public class Main {
          * же цикле запустили все десять потоков вызовом метода submit(), сохраняя результат каждого потока в списке
          * results
          */
-        for (int i = 0; i < num; i++) {
-            int b = random.nextInt(10); // generate random interval
-            int e = random.nextInt(100) + 10; //
+        for (int i = 0; i < number; i++) {
+            int b = random.nextInt(10);
+            int e = random.nextInt(100) + 10;
             System.out.println("Limits:" + b + " to " + e);
 
             /**
