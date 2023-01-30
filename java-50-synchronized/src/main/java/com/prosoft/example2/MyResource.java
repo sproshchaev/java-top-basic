@@ -1,7 +1,7 @@
 package com.prosoft.example2;
 
 public class MyResource {
-    long counter = 0;
+    private long counter = 0;
 
     /**
      * Синхронизированный метод add()

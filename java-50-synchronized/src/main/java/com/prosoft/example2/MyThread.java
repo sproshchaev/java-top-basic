@@ -17,6 +17,7 @@ public class MyThread extends Thread {
     /**
      * В потоковом методе run() вызывается метод add()
      */
+    @Override
     public void run() {
         for (int i = 0; i <= 100; i++) {
             counter.add(i);

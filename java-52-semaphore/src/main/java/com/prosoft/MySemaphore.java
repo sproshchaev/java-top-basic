@@ -6,9 +6,9 @@ import java.util.logging.Logger;
 
 public class MySemaphore implements Runnable {
 
-    Semaphore sem = new Semaphore(5); //5 is number
+    private Semaphore sem = new Semaphore(5); //5 is number
                                              //of free rooms
-    int counter;
+    private int counter;
 
     public MySemaphore(int c) {
         this.counter = c; //just a random value to

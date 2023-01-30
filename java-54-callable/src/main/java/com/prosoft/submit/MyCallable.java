@@ -3,8 +3,8 @@ package com.prosoft.submit;
 import java.util.concurrent.Callable;
 
 public class MyCallable implements Callable<Integer> {
-    int beg;
-    int end;
+    private int beg;
+    private int end;
 
     public MyCallable(int beg, int end) {
         this.beg = beg;
