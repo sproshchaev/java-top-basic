@@ -14,7 +14,7 @@ public class MyListener implements Runnable {
     private Socket socket = null;
     private ObjectOutputStream out = null;
     private ObjectInputStream in = null;
-    private String msg = "";
+    private String message = "";
 
     public MyListener(Socket s) {
         this.socket = s;
@@ -29,18 +29,18 @@ public class MyListener implements Runnable {
             in = new ObjectInputStream(socket.getInputStream());
             do {
                 try {
-                    msg = (String) in.readObject();
-                    System.out.println("client> " + msg);
-                    if (msg.equals("exit")) {
+                    message = (String) in.readObject();
+                    System.out.println("client> " + message);
+                    if (message.equals("exit")) {
                         break;
                     }
-                    DateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm: ss ");
-                    Date d = new Date();
-                    sendMessage("Message received " + df.format(d));
+                    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm: ss ");
+                    Date date = new Date();
+                    sendMessage("Message received " + dateFormat.format(date));
                 } catch (ClassNotFoundException ex) {
                     Logger.getLogger(MyListener.class.getName()).log(Level.SEVERE, null, ex);
                 }
-            } while (!msg.equals("exit"));
+            } while (!message.equals("exit"));
         } catch (IOException ex) {
             Logger.getLogger(MyListener.class.getName()).log(Level.SEVERE, null, ex);
         }
