@@ -70,6 +70,7 @@
         <module>java-57-socket-serversocket</module>
         <module>java-58-datagramsocket</module>
         <module>java-59-junit-calculator</module>
+        <module>java-60-junit-exception</module>
     </modules>
 
 </project>
