@@ -75,6 +75,7 @@
         <module>java-62-junit-rules</module>
         <module>java-63-junit-suite</module>
         <module>java-64-junit-parameterized</module>
+        <module>java-65-stub</module>
     </modules>
 
 </project>
