@@ -72,8 +72,8 @@
         <module>java-59-junit-calculator</module>
         <module>java-60-junit-exception</module>
         <module>java-61-junit-timeout</module>
-        <module>java-62-rules</module>
         <module>java-62-junit-rules</module>
+        <module>java-63-junit-suite</module>
     </modules>
 
 </project>
