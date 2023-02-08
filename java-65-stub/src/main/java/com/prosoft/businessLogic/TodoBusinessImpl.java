@@ -1,6 +1,6 @@
 package com.prosoft.businessLogic;
 
-import com.prosoft.data.TodoService;
+import com.prosoft.services.TodoService;
 
 import java.util.ArrayList;
 import java.util.List;

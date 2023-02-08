@@ -1,4 +1,4 @@
-package com.prosoft.data;
+package com.prosoft.services;
 
 import java.util.List;
 
