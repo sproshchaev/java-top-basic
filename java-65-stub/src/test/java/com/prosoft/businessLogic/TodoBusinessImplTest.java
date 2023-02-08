@@ -11,12 +11,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TodoBusinessImplTest {
     @Test
     public void testWithStub() {
-        // создание заглушки
+
+        /**
+         * Создание экземпляра стаба (заглушки)
+         */
         TodoService todoServiceStub = new TodoServiceStub();
+
+        /**
+         * Создание экземпляра тестируемого класса и передача в конструктор экземпляра заглушки
+         */
         TodoBusinessImpl todoBusinessImpl = new TodoBusinessImpl(todoServiceStub);
         List filteredTodos = todoBusinessImpl.retrieveTodosRelatedToSpring("Dummy");
-        // проверка, что в отфильтрованном списке
-        // два элемента
+
+        /**
+         * Проверка, элементов в отфильтрованном списке
+         */
         assertEquals(2, filteredTodos.size());
     }
 }

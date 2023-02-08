@@ -24,13 +24,17 @@ public class TodoBusinessImpl {
     }
 
     /**
-     * Метод, который будем тестировать: отбирает среди задач пользователя те, которые относятся к Spring
+     * Метод retrieveTodosRelatedToSpring отбирает среди задач пользователя те, которые относятся к Spring
+     * Данный метод планируется к тестам
      * @param user
      * @return
      */
     public List<String> retrieveTodosRelatedToSpring(String user) {
         List<String> filteredTodos = new ArrayList<String>();
-        List<String> todos = todoService.retrieveTodos(user); // вызов метода, реализации которого еще нет
+        /**
+         * Вызов метода, реализации которого еще нет
+         */
+        List<String> todos = todoService.retrieveTodos(user);
         for (String todo : todos) {
             if (todo.contains("Spring")) {
                 filteredTodos.add(todo);
