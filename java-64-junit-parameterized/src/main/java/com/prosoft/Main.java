@@ -2,7 +2,6 @@ package com.prosoft;
 
 /**
  * java-64-junit-parameterized
- *
  */
 public class Main {
     public static void main(String[] args) {

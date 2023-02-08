@@ -1,13 +1,11 @@
 package com.prosoft;
 
 /**
- * Hello world!
+ * java-67-mockito-verify
  *
  */
-public class Main
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("java-67-mockito-verify");
     }
 }
