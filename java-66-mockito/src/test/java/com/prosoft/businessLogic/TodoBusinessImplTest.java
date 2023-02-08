@@ -1,6 +1,6 @@
 package com.prosoft.businessLogic;
 
-import com.prosoft.services.TodoService;
+import com.prosoft.data.TodoService;
 import org.junit.Test;
 
 import java.util.Arrays;

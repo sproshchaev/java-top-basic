@@ -77,6 +77,7 @@
         <module>java-64-junit-parameterized</module>
         <module>java-65-stub</module>
         <module>java-66-mockito</module>
+        <module>java-67-mockito-verify</module>
     </modules>
 
 </project>

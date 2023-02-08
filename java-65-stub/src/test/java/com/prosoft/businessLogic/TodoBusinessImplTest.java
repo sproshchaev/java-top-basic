@@ -1,7 +1,7 @@
 package com.prosoft.businessLogic;
 
-import com.prosoft.services.TodoService;
-import com.prosoft.services.TodoServiceStub;
+import com.prosoft.data.TodoService;
+import com.prosoft.data.TodoServiceStub;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
