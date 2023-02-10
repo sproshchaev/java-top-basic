@@ -79,6 +79,7 @@
         <module>java-66-mockito</module>
         <module>java-67-mockito-verify</module>
         <module>java-68-mockito-agrumentcaptor</module>
+        <module>java-69-spring-context</module>
     </modules>
 
 </project>
