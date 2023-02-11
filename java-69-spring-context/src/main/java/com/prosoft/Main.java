@@ -1,10 +1,7 @@
 package com.prosoft;
 
 import com.prosoft.config.AppConfig;
-import com.prosoft.domain.Aircraft;
-import com.prosoft.domain.Car;
-import com.prosoft.domain.Ship;
-import com.prosoft.domain.Train;
+import com.prosoft.domain.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -48,6 +45,16 @@ public class Main {
          */
         Train train = context.getBean(Train.class);
         System.out.println("Train: " + train);
+
+        /**
+         * (11) Получение из контекста единичного бина класса Train (бин в контекст добавлен через стереотипную аннотацию)
+         * Внедрение бина AirCompany производиться через аннотацию @Autowired
+         * После получения экземпляра класса Ticket из контекста производится инициализация полей через setter
+         */
+        Ticket ticket = context.getBean(Ticket.class);
+        ticket.setId(1);
+        ticket.getAirCompany().setName("Delta");
+        System.out.println("Ticket: " + ticket);
 
     }
 }
