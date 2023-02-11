@@ -4,6 +4,7 @@ import com.prosoft.config.AppConfig;
 import com.prosoft.domain.Aircraft;
 import com.prosoft.domain.Car;
 import com.prosoft.domain.Ship;
+import com.prosoft.domain.Train;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -36,9 +37,17 @@ public class Main {
 
         /**
          * (7) Получение из контекста единичного бина класса Ship (бин в контекст добавлен через стереотипную аннотацию)
+         * Экземпляр класса формируется без инициализации полей
          */
         Ship ship = context.getBean(Ship.class);
         System.out.println("Ship: " + ship);
+
+        /**
+         * (8) Получение из контекста единичного бина класса Train (бин в контекст добавлен через стереотипную аннотацию)
+         * Экземпляр класса инициируется через метод с аннотацией @PostConstruct
+         */
+        Train train = context.getBean(Train.class);
+        System.out.println("Train: " + train);
 
     }
 }
