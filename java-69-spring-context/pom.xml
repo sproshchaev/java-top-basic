@@ -20,11 +20,20 @@
     </properties>
 
     <dependencies>
+        <!-- Для использования в приложении контекста Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.2.21.RELEASE</version>
         </dependency>
+
+        <!-- Для использования аннотации @PostConstruct -->
+        <dependency>
+            <groupId>Javax.annotation</groupId>
+            <artifactId>Javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
