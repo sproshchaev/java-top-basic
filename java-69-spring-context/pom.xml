@@ -13,6 +13,7 @@
     <name>java-69-spring-context</name>
     <url>http://maven.apache.org</url>
 
+    <!-- Для работы по стереотипными аннотациями @Component необходимо Java 11 -->
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
