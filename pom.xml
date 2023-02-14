@@ -81,6 +81,7 @@
         <module>java-68-mockito-agrumentcaptor</module>
         <module>java-69-spring-context</module>
         <module>java-70-spring-singleton-prototype</module>
+        <module>java-71-servlet</module>
     </modules>
 
 </project>
