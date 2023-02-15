@@ -82,6 +82,7 @@
         <module>java-69-spring-context</module>
         <module>java-70-spring-singleton-prototype</module>
         <module>java-71-servlet</module>
+        <module>java-72-jdbc</module>
     </modules>
 
 </project>
