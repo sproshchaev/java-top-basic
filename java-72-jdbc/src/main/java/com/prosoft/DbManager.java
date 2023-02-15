@@ -4,6 +4,9 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Класс DbManager
+ */
 public class DbManager {
     private String host; //server address
     private String user; //user name
