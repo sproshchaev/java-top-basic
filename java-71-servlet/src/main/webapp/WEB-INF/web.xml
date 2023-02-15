@@ -4,4 +4,17 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <!-- (1) Указать имя севлета и его класс -->
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>servlets.MyServlet</servlet-class>
+  </servlet>
+
+  <!-- (2) Указать url для вызова сервлета -->
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+
 </web-app>
