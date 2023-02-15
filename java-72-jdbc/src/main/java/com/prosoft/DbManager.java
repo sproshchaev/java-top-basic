@@ -38,23 +38,23 @@ public class DbManager {
         }
     }
 
-    public ResultSet getSelectQuery(String sql, Connection conn) {
-        Statement comm = null;
-        ResultSet set = null;
+    public ResultSet doExecuteQuery(String sql, Connection connection) {
+        Statement statement = null;
+        ResultSet resultSet = null;
         try {
-            comm = (Statement) conn.createStatement();
-            set = comm.executeQuery(sql);
+            statement = (Statement) connection.createStatement();
+            resultSet = statement.executeQuery(sql);
         } catch (SQLException ex) {
             Logger.getLogger(DbManager.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return set;
+        return resultSet;
     }
 
-    public void doExecute(String sql, Connection conn) {
-        Statement comm = null;
+    public void doExecuteUpdate(String sql, Connection connection) {
+        Statement statement = null;
         try {
-            comm = (Statement) conn.createStatement();
-            comm.execute(sql);
+            statement = (Statement) connection.createStatement();
+            statement.executeUpdate(sql);
         } catch (SQLException ex) {
             Logger.getLogger(DbManager.class.getName()).log(Level.SEVERE, null, ex);
         }
