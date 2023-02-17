@@ -84,6 +84,7 @@
         <module>java-71-servlet</module>
         <module>java-72-jdbc</module>
         <module>java-73-hibernate</module>
+        <module>java-74-jsp</module>
     </modules>
 
 </project>

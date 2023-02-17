@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.prosoft</groupId>
+        <artifactId>java-top-basic</artifactId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>java-74-jsp</artifactId>
+    <packaging>war</packaging>
+    <name>java-74-jsp Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <!-- (1) Версия Java 11 -->
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+    </dependencies>
+    <build>
+        <finalName>java-74-jsp</finalName>
+        <plugins>
+
+            <!-- (2) Tomcat plugin -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <path>/</path>
+                    <port>8088</port>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>
