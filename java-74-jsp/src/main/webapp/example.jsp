@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8"
-         language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%!
     protected String str = "simple string";
     // Описание ниже, не является объявлением
