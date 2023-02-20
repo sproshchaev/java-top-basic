@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
-<h2>Использование бинов:</h2>
+<h2>Использование бинов на JSP-странице:</h2>
 
      <!-- (1) Вывод даты через бин, используя класс java.util.Date -->
      <jsp:useBean id="date" class="java.util.Date"/>

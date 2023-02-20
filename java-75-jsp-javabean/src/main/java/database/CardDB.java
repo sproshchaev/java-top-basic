@@ -1,5 +1,8 @@
 package database;
 
+/**
+ * Класс CardDB создан как JavaBean
+ */
 public class CardDB {
     private String clientName;
 
