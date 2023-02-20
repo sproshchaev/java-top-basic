@@ -5,7 +5,9 @@
 
      <!-- (1) Вывод даты через бин, используя класс java.util.Date -->
      <jsp:useBean id="date" class="java.util.Date"/>
-     <p>The date/time is <%= date %>
+     <p>
+          The date/time is <%= date %>
+     </p>
 
      <!-- (2) Создание бина CardDB и запись значения в поле clientName, scope="page" — область видимости объекта -->
      <jsp:useBean id="cardDB" class="database.CardDB" scope="page">
@@ -13,8 +15,8 @@
      </jsp:useBean>
 
      <!-- (3) Вывод на странице значения поля clientName из CardDB -->
-     <p>Client Name:
-         <jsp:getProperty name = "cardDB" property = "clientName"/>
+     <p>
+         Client Name: <jsp:getProperty name = "cardDB" property = "clientName"/>
      </p>
 
 </body>
