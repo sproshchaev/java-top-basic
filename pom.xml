@@ -86,6 +86,7 @@
         <module>java-73-hibernate</module>
         <module>java-74-jsp</module>
         <module>java-75-jsp-javabean</module>
+        <module>java-76-jsp-fragment</module>
     </modules>
 
 </project>
