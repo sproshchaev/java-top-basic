@@ -7,8 +7,8 @@
      <jsp:useBean id="date" class="java.util.Date"/>
      <p>The date/time is <%= date %>
 
-     <!-- (2) Создание бина CardDB и запись значения в поле clientName -->
-     <jsp:useBean id="cardDB" class="database.CardDB">
+     <!-- (2) Создание бина CardDB и запись значения в поле clientName, scope="page" — область видимости объекта -->
+     <jsp:useBean id="cardDB" class="database.CardDB" scope="page">
          <jsp:setProperty name="cardDB" property="clientName" value="Ivanov" />
      </jsp:useBean>
 
