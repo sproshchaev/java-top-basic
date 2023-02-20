@@ -1,6 +1,6 @@
 package database;
 
-public class CardDB implements java.io.Serializable {
+public class CardDB {
     private String clientName;
 
     public CardDB() {
