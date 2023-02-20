@@ -21,7 +21,7 @@
     <dependencies>
     </dependencies>
     <build>
-        <finalName>java-74-jsp</finalName>
+        <finalName>java-75-jsp-javabean</finalName>
         <plugins>
 
             <!-- (2) Tomcat plugin -->

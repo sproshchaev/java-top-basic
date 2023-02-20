@@ -87,6 +87,7 @@
         <module>java-74-jsp</module>
         <module>java-75-jsp-javabean</module>
         <module>java-76-jsp-fragment</module>
+        <module>java-77-jsp-mvc</module>
     </modules>
 
 </project>
