@@ -15,7 +15,7 @@ public class Main {
         LinkedHashSet<Car> carLinkedHashSet = new LinkedHashSet<>();
 
         /**
-         * (3) Добавление элементов. Порядок элементов может соответствует порядку добавления
+         * (3) Добавление элементов. Порядок элементов может соответствовать порядку добавления
          */
         carLinkedHashSet.add(new Car("audi","black"));
         carLinkedHashSet.add(new Car("fiat","green"));
