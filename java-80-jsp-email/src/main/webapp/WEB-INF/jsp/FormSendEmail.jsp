@@ -14,10 +14,7 @@
             </tr>
             <tr>
                 <td>Text</td>
-                <td><textarea rows="5" cols="30"
-                              name="text">
-</textarea>
-                </td>
+                <td><textarea rows="5" cols="30" name="text"> </textarea> </td>
             </tr>
             <tr>
                 <td colspan="2" align="center">
