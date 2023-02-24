@@ -89,6 +89,7 @@
         <module>java-76-jsp-fragment</module>
         <module>java-77-jsp-mvc</module>
         <module>java-78-jsp-upload-download</module>
+        <module>java-79-jsp-coretags</module>
     </modules>
 
 </project>
