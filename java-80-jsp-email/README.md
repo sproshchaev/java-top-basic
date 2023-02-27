@@ -5,3 +5,5 @@ Download JavaMail Release https://javaee.github.io/javamail/#Download_JavaMail_R
 Mvn Repository: https://mvnrepository.com/artifact/com.sun.mail/javax.mail
 
 Url: http://localhost:8080/ServiceEmailServlet/
+
+-

@@ -38,7 +38,7 @@
     </dependencies>
 
     <build>
-        <finalName>java-77-jsp-mvc</finalName>
+        <finalName>java-79-jsp-coretags</finalName>
         <plugins>
 
             <!-- (4) Tomcat plugin -->
