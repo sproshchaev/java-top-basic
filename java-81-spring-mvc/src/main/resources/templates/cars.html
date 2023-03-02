@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car</title>
+</head>
+<body>
+<p><img src="cars.jpg" alt="All BMW"></p>
+<tr th:each="car : ${carList}">
+    <td th:text="${car.getId()}"></td>
+    <td th:text="${car.getBrand()}"></td>
+    <td th:text="${car.getColor()}"></td>
+    </br>
+</tr>
+</body>
+</html>

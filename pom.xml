@@ -91,7 +91,7 @@
         <module>java-78-jsp-upload-download</module>
         <module>java-79-jsp-coretags</module>
         <module>java-80-jsp-email</module>
-        <module>java-81-spring-requestmapping</module>
+        <module>java-81-spring-mvc</module>
     </modules>
 
 </project>
