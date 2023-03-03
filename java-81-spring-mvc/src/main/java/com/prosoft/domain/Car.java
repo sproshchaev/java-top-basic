@@ -19,7 +19,17 @@ public class Car {
     public Car() {
     }
 
+    public Car(long id) {
+        this.id = id;
+    }
+
     public Car(String brand, String color) {
+        this.brand = brand;
+        this.color = color;
+    }
+
+    public Car(long id, String brand, String color) {
+        this.id = id;
         this.brand = brand;
         this.color = color;
     }
