@@ -35,7 +35,7 @@
             <version>3.0.3</version>
         </dependency>
 
-        <!-- (3) H2 -->
+        <!-- (3) H2 необходима для Spring Data JPA, в проекте БД не будет использоваться -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
