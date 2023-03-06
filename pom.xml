@@ -92,6 +92,7 @@
         <module>java-79-jsp-coretags</module>
         <module>java-80-jsp-email</module>
         <module>java-81-spring-mvc</module>
+        <module>java-82-spring-mvc-ajax</module>
     </modules>
 
 </project>
