@@ -93,6 +93,7 @@
         <module>java-80-jsp-email</module>
         <module>java-81-spring-mvc</module>
         <module>java-82-spring-mvc-ajax</module>
+        <module>java-83-spring-web-services</module>
     </modules>
 
 </project>
