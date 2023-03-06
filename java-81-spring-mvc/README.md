@@ -3,8 +3,8 @@
 [![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-FFFFFF??style=for-the-badge&logo=Spring)](https://spring.io/projects/spring-data-jpa)
 [![Thymeleaf](https://img.shields.io/badge/Thymeleaf-FFFFFF??style=for-the-badge&logo=Thymeleaf&logoColor=025B10)](https://www.thymeleaf.org/)
 ### Java version
-Java 8
-Java 17
+Java 8 (18)
+Java 17 (OpenJDK)
 
 ### Примеры GET-запросов
 1. Страница приветствия http://localhost:8080/welcome
