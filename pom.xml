@@ -94,6 +94,7 @@
         <module>java-81-spring-mvc</module>
         <module>java-82-spring-mvc-ajax</module>
         <module>java-83-spring-web-services</module>
+        <module>java-84-spring-security</module>
     </modules>
 
 </project>
