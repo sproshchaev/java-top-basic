@@ -3,8 +3,6 @@ package com.prosoft.domain;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-// на джакарте все работает!
-
 
 /**
  * Класс Car
