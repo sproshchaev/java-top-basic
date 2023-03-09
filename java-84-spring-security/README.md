@@ -4,3 +4,7 @@
 
 ### Статьи по теме
 1. Spring Boot With H2 Database https://www.baeldung.com/spring-boot-h2-database
+2. Шифрование паролей в БД https://youtu.be/AdLXmE4rjy4
+3. Пример хеширования пароля Spring Security https://csharpcoderr.com/5334/
+4. Spring Security — хеширование (bcrypt example) https://javastudy.ru/spring-security/spring-security-bcrypt-example/
+5. Bcrypt Hash Generator https://bcrypt.online/

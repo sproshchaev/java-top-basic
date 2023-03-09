@@ -1,3 +1,11 @@
+drop table if exists car;
+create table car
+(
+    id    bigint auto_increment primary key,
+    brand varchar(255),
+    color varchar(255)
+);
+
 drop table if exists user_access;
 create table user_access
 (

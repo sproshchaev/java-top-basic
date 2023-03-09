@@ -3,6 +3,9 @@ package com.prosoft;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * java-84-spring-security
+ */
 @SpringBootApplication
 public class Main {
 
