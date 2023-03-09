@@ -3,9 +3,11 @@ package com.prosoft.service;
 import com.prosoft.domain.UserAccess;
 import com.prosoft.repository.UserAccessRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserAccessServiceImpl implements UserAccessService {
 
     private final UserAccessRepository userAccessRepository;
