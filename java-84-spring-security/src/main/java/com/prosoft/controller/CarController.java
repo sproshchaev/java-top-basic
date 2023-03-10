@@ -22,6 +22,11 @@ public class CarController {
         this.carRepository = carRepository;
     }
 
+    @GetMapping({"/", "/index"})
+    public String indexPage(Model model) {
+        return "index";
+    }
+
     /**
      * Хендлер для GET-запросов http://localhost:8080/welcome
      *

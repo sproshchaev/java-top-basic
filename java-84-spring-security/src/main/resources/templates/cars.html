@@ -5,12 +5,15 @@
     <title>Car</title>
 </head>
 <body>
-<p><img src="cars.jpg" alt="All BMW"></p>
 <tr th:each="car : ${carList}">
     <td th:text="${car.getId()}"></td>
     <td th:text="${car.getBrand()}"></td>
     <td th:text="${car.getColor()}"></td>
     </br>
 </tr>
+<br>
+<p><a href="http://localhost:8080/index">Index</a></p>
+<br>
+<p><img src="cars.jpg" alt="All BMW"></p>
 </body>
 </html>
