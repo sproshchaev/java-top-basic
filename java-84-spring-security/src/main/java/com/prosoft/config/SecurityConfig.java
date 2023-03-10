@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -27,8 +28,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin();
     }
 
+    /**
+     * Бин passwordEncoder() задает процедуру проверки паролей, если useBcrypt = true, то пароль в БД должен быть
+     * захеширован через https://bcrypt.online/
+     *
+     * @return
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+        boolean useBcrypt = false;
+        if (useBcrypt) {
+            // Сравнение паролей будет производиться с использованием bcrypt — адаптивной криптографической хеш-функции
+            return new BCryptPasswordEncoder();
+        } else {
+            // Сравнение паролей будет производиться как сравнение простых текстовых строк
+            return NoOpPasswordEncoder.getInstance();
+        }
+
     }
+
 }
