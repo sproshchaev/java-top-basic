@@ -97,6 +97,7 @@
         <module>java-84-spring-security</module>
         <module>java-85-spring-security-acl</module>
         <module>java-86-spring-security-oauth</module>
+        <module>java-87-spring-data</module>
     </modules>
 
 </project>
