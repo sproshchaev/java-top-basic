@@ -5,12 +5,23 @@
     <title>Car</title>
 </head>
 <body>
-<tr th:each="car : ${carList}">
-    <td th:text="${car.getId()}"></td>
-    <td th:text="${car.getBrand()}"></td>
-    <td th:text="${car.getColor()}"></td>
-    </br>
-</tr>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Brand</th>
+        <th>Color</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="car : ${carList}">
+        <td th:text="${car.getId()}"></td>
+        <td th:text="${car.getBrand()}"></td>
+        <td th:text="${car.getColor()}"></td>
+        </br>
+    </tr>
+    </tbody>
+</table>
 <br>
 <p><a href="http://localhost:8080/index">Index</a></p>
 <br>
