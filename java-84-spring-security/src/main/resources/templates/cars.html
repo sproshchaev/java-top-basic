@@ -5,15 +5,23 @@
     <title>Car</title>
 </head>
 <body>
+<!-- Html: <table> - Таблица -->
 <table>
+    <!-- Html: <caption> - Заголовок таблицы -->
+    <caption>Таблица 1: «Автомобили в наличии»</caption>
+    <!-- Html: <thead> - шапка таблицы -->
     <thead>
+    <!-- Html: <tr> — строка -->
     <tr>
+        <!-- Html: <th> — ячейка шапки -->
         <th>Id</th>
         <th>Brand</th>
         <th>Color</th>
     </tr>
     </thead>
+    <!-- Html: <tbody> — тело таблицы -->
     <tbody>
+    <!-- Html: <tr> — строка -->
     <tr th:each="car : ${carList}">
         <td th:text="${car.getId()}"></td>
         <td th:text="${car.getBrand()}"></td>
