@@ -60,7 +60,7 @@ public class Main {
 
         float result = scanner.nextFloat();
 
-        System.out.print("Использование next() считывает введённую строку до первого пробела. Введите несколько склов через пробел: ");
+        System.out.print("Использование next() считывает введённую строку до первого пробела. Введите несколько слов через пробел: ");
 
         String word = scanner.next();
 
