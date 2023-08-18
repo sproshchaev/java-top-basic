@@ -8,10 +8,13 @@
     </parent>
 
     <artifactId>java-73-hibernate</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>java-73-hibernate</name>
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>hibernate-config-demo</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
