@@ -4,3 +4,6 @@
 ### hibernate-config-demo
 
 В данном примере не используются файлы конфигурации в ресурсах проекта. Все свойства создаются в самом классе через использование SessionFactory
+
+### References
+1. Программная конфигурация Hibernate http://hibernate-refdoc.3141.ru/ch3.Configuration
